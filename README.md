@@ -1,2 +1,2 @@
-# springmvc_start
+# SpringMVC Start
 Demo project for SpringMVC
