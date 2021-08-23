@@ -13,4 +13,9 @@ public class HelloController {
     public String hello() {
         return "index";
     }
+
+    @RequestMapping("/target")
+    public String target() {
+        return "target";
+    }
 }
