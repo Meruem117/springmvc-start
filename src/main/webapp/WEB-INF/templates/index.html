@@ -6,6 +6,23 @@
 </head>
 <body>
 <h1>SpringMVC</h1>
-<a th:href="@{/target}">Jump to target</a>
+<a th:href="@{/hello/target}">Hello Target</a>
+<a th:href="@{/hello/test}">Test Target</a>
+<br>
+<form th:action="@{/hello/method}" method="post">
+    <input type="submit" value="submitMethod">
+</form>
+<br>
+<form th:action="@{/hello/params(username='shawn',password='123456')}" method="post">
+    <input type="submit" value="submitParams">
+</form>
+<br>
+<form th:action="@{/hello/headers}" method="post">
+    <input type="submit" value="submitHeaders">
+</form>
+<br>
+<a th:href="@{/hello/ant}">Test Ant</a>
+<br>
+<a th:href="@{/hello/rest/1/shawn}">Test Rest</a>
 </body>
 </html>
