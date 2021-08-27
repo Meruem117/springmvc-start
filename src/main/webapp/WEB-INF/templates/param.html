@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Param</title>
+</head>
+<body>
+<h1>Param</h1>
+
+<!--test servlet api-->
+<a th:href="@{/param/servlet(username='admin')}">Test Servlet Api</a>
+<br>
+<!--test param-->
+<a th:href="@{/param/param(username='admin')}">Test Param</a>
+<br>
+<!--test params-->
+<a th:href="@{/param/param(name='n1',name='n2',name='n3')}">Test Params</a>
+<br>
+<!--test requestParam-->
+<a th:href="@{/param/requestParam(user='user')}">Test RequestParam</a>
+<br>
+
+</body>
+</html>

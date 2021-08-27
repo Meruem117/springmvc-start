@@ -7,11 +7,10 @@ import org.springframework.web.bind.annotation.*;
  * @auther: Meruem117
  */
 @Controller
-@RequestMapping("/hello")
-public class HelloController {
-
-    @RequestMapping(value = {"/target", "test"})
-    public String target() {
+@RequestMapping("/mapping")
+public class MappingController {
+    @RequestMapping(value = {"/target", "/value"})
+    public String value() {
         return "target";
     }
 
@@ -40,7 +39,7 @@ public class HelloController {
         return "target";
     }
 
-    @RequestMapping(value = "params", params = {"username", "password=123456"})
+    @RequestMapping(value = "/params", params = {"username", "password=123456"})
     public String params() {
         return "target";
     }

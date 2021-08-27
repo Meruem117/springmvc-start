@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapping</title>
+</head>
+<body>
+<h1>Mapping</h1>
+
+<!--test value-->
+<a th:href="@{/mapping/target}">Hello Target</a>
+<a th:href="@{/mapping/value}">Test Value</a>
+<br>
+<!--test method-->
+<form method="post" th:action="@{/mapping/method}">
+    <input type="submit" value="submitMethod">
+</form>
+<br>
+<!--test params-->
+<form method="post" th:action="@{/mapping/params(username='shawn',password='123456')}">
+    <input type="submit" value="submitParams">
+</form>
+<br>
+<!--test headers-->
+<form method="post" th:action="@{/mapping/headers}">
+    <input type="submit" value="submitHeaders">
+</form>
+<br>
+<!--test ant-->
+<a th:href="@{/mapping/ant}">Test Ant</a>
+<br>
+<!--test rest-->
+<a th:href="@{/mapping/rest/1/shawn}">Test Rest</a>
+
+</body>
+</html>
