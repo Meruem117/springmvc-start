@@ -16,8 +16,17 @@
 <!--test params-->
 <a th:href="@{/param/param(name='n1',name='n2',name='n3')}">Test Params</a>
 <br>
-<!--test requestParam-->
+<!--test RequestParam-->
 <a th:href="@{/param/requestParam(user='user')}">Test RequestParam</a>
+<br>
+<!--test RequestHeader-->
+<a th:href="@{/param/requestHeader}">Test RequestHeader</a>
+<br>
+<!--test CookieValue-->
+<a th:href="@{/param/cookieValue}">Test CookieValue</a>
+<br>
+<!--test POJO-->
+<a th:href="@{/param/pojo(id=1,name='John',password='123456')}">Test POJO</a>
 <br>
 
 </body>
