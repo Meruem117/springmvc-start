@@ -22,4 +22,9 @@ public class IndexController {
     public String param() {
         return "param";
     }
+
+    @RequestMapping("/scope")
+    public String scope() {
+        return "scope";
+    }
 }
